@@ -1,0 +1,92 @@
+﻿#debug
+
+#route	20	2.5	0	opensceneryx/objects/airport/vehicles/loaders/6.obj
+# <lat>		<lon>
+#39.222945506 -106.866490777
+#39.222928363 -106.866559005
+#39.222609792 -106.866387512
+#39.222698363 -106.866026087
+#pause 30
+#reverse
+#pause 30
+
+train	marginal/luggage_train_4
+0	0	180	lib/airport/Ramp_Equipment/Luggage_Truck.obj
+3.36	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+6.69	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+10.02	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+13.35	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+
+route	16	0	0	marginal/luggage_train_4
+39.222938988 -106.866533034
+pause 15
+39.222912155 -106.866610618
+39.222586355 -106.866442430
+39.222679069 -106.866008353
+39.221071499  -106.865105725
+39.220515214 -106.865239602
+39.220131785 -106.865083418
+39.220089357 -106.865093560
+39.220116071 -106.865180779
+39.220194643 -106.865109787
+pause 30
+reverse
+
+#South side luggage cart
+train	marginal/luggage_train_1
+0	0	180	lib/airport/Ramp_Equipment/Luggage_Truck.obj
+3.36	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+6.69	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+10.02	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+13.35	0	180	lib/airport/Ramp_Equipment/Luggage_Cart.obj
+
+route	16	0	0	marginal/luggage_train_1	
+39.218329951 -106.863552153
+pause 20
+39.218535831 -106.863708322
+39.218642186 -106.864161714
+39.219094926 -106.864404781
+39.219061751 -106.864720898
+39.219103707 -106.864790167
+39.219169081 -106.864893440
+39.219266655 -106.864825431
+39.219197378 -106.864699488
+39.219103707 -106.864790167
+39.219061751 -106.864720898
+39.219094926 -106.864404781
+39.218642186 -106.864161714
+39.218535831 -106.863708322
+39.218329951 -106.863552153
+
+# Fuel Truck
+route 30 0 0 MisterX_Library/Airport/Vehicles/Fuel_Trucks/Medium/Active/ASIG.obj
+39.218642848 -106.863737696
+pause 30
+39.218619991 -106.864182078
+39.219051419 -106.864421786
+39.219022848 -106.864746314
+39.219042848 -106.865196230
+39.220501418 -106.865919054
+39.220606272 -106.865562450
+39.222748039 -106.866620747
+pause 60
+39.222595354 -106.867063507
+39.224709932 -106.868086726
+39.224852158 -106.867873435
+pause 200
+reverse
+
+# Construction
+route 10 0 0 MisterX_Library/Vehicles/Construction/Active/Steamroller.obj
+39.223011351 -106.870657077
+pause 2
+39.223361248 -106.870821946
+pause 5
+backup
+
+route 15 0 0 MisterX_Library/Vehicles/Construction/Bulldozer.obj
+39.223530788 -106.871499838
+pause 5
+39.223306420 -106.871499838
+pause 2
+backup

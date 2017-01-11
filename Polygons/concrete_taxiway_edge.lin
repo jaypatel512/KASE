@@ -1,0 +1,13 @@
+A
+850
+LINE_PAINT
+
+TEXTURE concrete_taxiway_edge.dds
+LOD 3000
+TEX_WIDTH 256
+SCALE 2 4
+S_OFFSET 0		0		128		255 
+LAYER_GROUP shoulders -2
+MIRROR
+
+DECAL_LIB lib/g10/decals/asphalt_gravel_edge.dcl
